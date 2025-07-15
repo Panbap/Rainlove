@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RainLove</title>
+    <link rel="icon" href="https://github.com/Panbap/anh/blob/main/icon1.png?raw=true" type="image/png">
+    <link rel="stylesheet" href="./fonts.css">
+
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: #000;
+            height: 100%;
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        .text {
+            position: fixed;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffffff;
+            z-index: 2;
+        }
+
+        #dotCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #textAnimation {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            color: red;
+            display: none;
+        }
+
+        #pinkboard {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: none;
+        }
+
+        #text1,
+        #text2 {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: pink;
+            font-family: "Raleway", sans-serif;
+            font-size: 35pt;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="rainCanvas"></canvas>
+    <canvas id="dotCanvas" class="canvas"></canvas>
+    <div id="textAnimation" style="display:none;">
+        <span id="text1"></span>
+        <span id="text2"></span>
+    </div>
+    <canvas id="pinkboard" style="display:none;"></canvas>
+
+    <script>
+        const _0x54e165=_0x331d;(function(_0xff8ead,_0x30f1ac){const _0x1dbe16=_0x331d,_0x1311d4=_0xff8ead();while(!![]){try{const _0x56421a=-parseInt(_0x1dbe16(0x154))/0x1+parseInt(_0x1dbe16(0x15d))/0x2*(-parseInt(_0x1dbe16(0x152))/0x3)+-parseInt(_0x1dbe16(0x162))/0x4+-parseInt(_0x1dbe16(0x159))/0x5+-parseInt(_0x1dbe16(0x14c))/0x6+parseInt(_0x1dbe16(0x161))/0x7*(-parseInt(_0x1dbe16(0x14b))/0x8)+-parseInt(_0x1dbe16(0x157))/0x9*(-parseInt(_0x1dbe16(0x15f))/0xa);if(_0x56421a===_0x30f1ac)break;else _0x1311d4['push'](_0x1311d4['shift']());}catch(_0x13f1e8){_0x1311d4['push'](_0x1311d4['shift']());}}}(_0x5053,0x3f653));const canvas=document['getElementById'](_0x54e165(0x15e)),ctx=canvas[_0x54e165(0x158)]('2d');function resizeCanvas(){const _0x3da1ec=_0x54e165;canvas['width']=window[_0x3da1ec(0x150)],canvas[_0x3da1ec(0x14f)]=window[_0x3da1ec(0x155)];}resizeCanvas(),window[_0x54e165(0x15b)](_0x54e165(0x15a),resizeCanvas);function _0x331d(_0x3f4b14,_0x40c499){const _0x505320=_0x5053();return _0x331d=function(_0x331dc3,_0x4138dc){_0x331dc3=_0x331dc3-0x14a;let _0xb2cb18=_0x505320[_0x331dc3];return _0xb2cb18;},_0x331d(_0x3f4b14,_0x40c499);}const letters='I\x20LOVE\x20U'['split'](''),fontSize=0x10;let columns=Math[_0x54e165(0x156)](window[_0x54e165(0x150)]/fontSize);const drops=Array(columns)[_0x54e165(0x153)](0x1);function drawRainBackground(){const _0x4c0cdf=_0x54e165;ctx['fillStyle']=_0x4c0cdf(0x160),ctx['fillRect'](0x0,0x0,canvas['width'],canvas[_0x4c0cdf(0x14f)]),ctx['fillStyle']=_0x4c0cdf(0x15c),ctx['font']=fontSize+_0x4c0cdf(0x151);for(let _0xaab429=0x0;_0xaab429<drops[_0x4c0cdf(0x14d)];_0xaab429++){const _0xa88da5=letters[Math[_0x4c0cdf(0x156)](Math[_0x4c0cdf(0x14a)]()*letters[_0x4c0cdf(0x14d)])];ctx[_0x4c0cdf(0x14e)](_0xa88da5,_0xaab429*fontSize,drops[_0xaab429]*fontSize);if(drops[_0xaab429]*fontSize>canvas[_0x4c0cdf(0x14f)]||Math['random']()>0.95)drops[_0xaab429]=0x0;drops[_0xaab429]++;}}setInterval(drawRainBackground,0x32);function _0x5053(){const _0x13f20c=['317313wOrghx','innerHeight','floor','15052023zimJfp','getContext','526350QOVgvm','resize','addEventListener','#f584b7','2804gsVxMH','rainCanvas','10ebdneb','rgba(0,\x200,\x200,\x200.05)','1831256JjyTAg','1228468dOPiGP','random','8guXSXz','2133468wLgKqd','length','fillText','height','innerWidth','px\x20arial','141MCaZFd','fill'];_0x5053=function(){return _0x13f20c;};return _0x5053();}
+    </script>
+
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
